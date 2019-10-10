@@ -5,14 +5,33 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
   },
   extends: [
-    '@nuxtjs',
+    '@nuxtjs/eslint-config-typescript',
     'plugin:nuxt/recommended'
   ],
-  // add your custom rules here
   rules: {
-    'nuxt/no-cjs-in-config': 'off'
-  }
+    'nuxt/no-cjs-in-config': 'off',
+    'comma-dangle': ['error', 'always-multiline'],
+    semi: ['error', 'always'],
+    'space-before-function-paren': ['error', {
+      anonymous: 'always',
+      named: 'never',
+      asyncArrow: 'always',
+    }],
+    quotes: ['error', 'single', { avoidEscape: true }],
+    'vue/html-quotes': ['error', 'double'],
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+          normal: 'always',
+          component: 'always',
+        },
+        svg: 'always',
+        math: 'always',
+      },
+    ],
+  },
 }
