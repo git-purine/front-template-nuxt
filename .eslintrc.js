@@ -20,6 +20,12 @@ module.exports = {
       asyncArrow: 'always',
     }],
     quotes: ['error', 'single', { avoidEscape: true }],
+    'vue/attributes-order': [
+      'warn',
+      {
+        order: ['GLOBAL', 'DEFINITION', 'UNIQUE', 'LIST_RENDERING', 'CONDITIONALS', 'RENDER_MODIFIERS', 'TWO_WAY_BINDING', 'OTHER_DIRECTIVES', 'OTHER_ATTR', 'EVENTS', 'CONTENT'],
+      },
+    ],
     'vue/html-quotes': ['error', 'double'],
     'vue/html-self-closing': [
       'error',
@@ -31,6 +37,14 @@ module.exports = {
         },
         svg: 'always',
         math: 'always',
+      },
+    ],
+    'vue/singleline-html-element-content-newline': [
+      'warn',
+      {
+        ignoreWhenNoAttributes: true,
+        ignoreWhenEmpty: true,
+        ignores: ['pre', 'textarea'],
       },
     ],
   },
