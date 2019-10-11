@@ -13,9 +13,10 @@
     "baseUrl": ".",
     "paths": {
       "@@/*": ["./*"],
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     },
     "types": ["@types/node", "@nuxt/types", "@nuxtjs/axios", "@types/jest"]
   },
+  "include": ["src", "test"],
   "exclude": ["node_modules", ".nuxt", "dist"]
 }

@@ -5,6 +5,8 @@ const colors = require('vuetify/es5/util/colors').default;
 const config = {
   mode: 'spa',
 
+  srcDir: 'src',
+
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
     title: process.env.npm_package_name || '',
@@ -33,7 +35,7 @@ const config = {
     root: path.resolve(__dirname),
     alias: {
       '@@/': path.resolve(__dirname),
-      '@/': path.resolve(__dirname),
+      '@/': path.resolve(__dirname, 'src'),
     },
   },
 
