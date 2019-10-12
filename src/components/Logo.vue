@@ -1,10 +1,9 @@
-<template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two" />
-    <div class="Triangle Triangle--one" />
-    <div class="Triangle Triangle--three" />
-    <div class="Triangle Triangle--four" />
-  </div>
+<template lang="pug">
+  div.VueToNuxtLogo
+    div.Triangle.Triangle--two
+    div.Triangle.Triangle--one
+    div.Triangle.Triangle--three
+    div.Triangle.Triangle--four
 </template>
 
 <script lang="ts">
@@ -14,7 +13,7 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class Logo extends Vue {}
 </script>
 
-<style>
+<style lang="stylus" scoped>
 .VueToNuxtLogo {
   display: inline-block;
   animation: turn 2s linear forwards 1s;
