@@ -48,7 +48,7 @@
     "fork-ts-checker-webpack-plugin": "^1.5.0",
     "jest": "^24.1.0",
     "nodemon": "^1.18.9",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "storybook-addon-i18next": "^1.2.1",
     "stylus": "^0.54.7",
